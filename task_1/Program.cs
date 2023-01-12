@@ -29,8 +29,9 @@ void FillArray(int[] binNumber)
   for (int i = 0; i < count; i++)
   {
     binNumber[i] = Random.Shared.Next(2);
-    binNumber[1] = 0;
+    
   }
+  binNumber[0] = 1;
 }
 
 // 4. Печать массива
