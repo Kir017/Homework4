@@ -14,7 +14,7 @@ int GetValue(string text)
 void SumNumber (int Number)
 {
 int sum = 0;
-while (Number > 1)
+while (Number > 0)
 {
     sum += Number % 10;
     Number /= 10;

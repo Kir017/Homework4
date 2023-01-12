@@ -29,10 +29,7 @@ void FillArray(int[] binNumber)
   for (int i = 0; i < count; i++)
   {
     binNumber[i] = Random.Shared.Next(2);
-    if (binNumber[0] == 0)
-    {
-      i--;
-    }
+    binNumber[1] = 0;
   }
 }
 
