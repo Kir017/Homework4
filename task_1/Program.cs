@@ -52,7 +52,6 @@ string PrintArray(int[] Numbers)
 // int <- (int[])
 int BinToDecimal(int[] arrBin)
 {
-  int count = arrBin.Length;
   int exponent = arrBin.Length - 1;
   int dec = 0;
   for (int i = 0; i < arrBin.Length; i++)
@@ -70,7 +69,7 @@ int BinToDecimal(int[] arrBin)
 // string <- (int[] , int)
 string GoodPrint(int[] bin, int dec)
 {
-  return $"{String.Join("", bin)} >> {dec}";
+  return $"\n{String.Join("", bin)} >> {dec}";
 }
 
 
@@ -80,9 +79,7 @@ FillArray(bin);
 int dec = BinToDecimal(bin);
 string binPrint = PrintArray(bin);
 
-Console.WriteLine();
 Console.WriteLine(binPrint);
-Console.WriteLine();
 Console.WriteLine(GoodPrint(bin, dec));
 
 
